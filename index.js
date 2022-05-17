@@ -36,6 +36,7 @@ let uniqueId = setInterval(function() {
     counter += 1;
 }, 1000);
 resetBtn.onclick = function() {
+    input.value="";
     result.textContent = "";
     quoteGen();
     clearInterval(uniqueId);
